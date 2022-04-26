@@ -1,0 +1,17 @@
+version: '3.1'
+
+services:
+    app:
+        build:
+            args:
+                UID: 1000
+        volumes:
+            - ./:/var/www
+            - ../packages:/var/packages
+            - ~/.ssh:/home/dev/.ssh
+            - ./docker/app/php.ini:/usr/local/etc/php/php.ini
+            - ./docker/app/php-fpm.conf:/usr/local/etc/php-fpm.d/www.conf
+    node:
+        build:
+            args:
+                UID: 1000

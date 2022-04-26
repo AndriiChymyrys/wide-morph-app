@@ -1,0 +1,63 @@
+version: '3.1'
+
+services:
+    app:
+        container_name: wm-dev-app
+        image: wm/dev-app
+        build:
+            context: .
+            dockerfile: docker/app/Dockerfile
+            args:
+                UID: 1000
+        volumes:
+            - ./:/var/www
+            - ~/.ssh:/home/dev/.ssh
+            - ./docker/app/php.ini:/usr/local/etc/php/php.ini
+            - ./docker/app/php-fpm.conf:/usr/local/etc/php-fpm.d/www.conf
+        environment:
+            - DATABASE_USERNAME=dev
+            - DATABASE_PASSWORD=dev
+            - DATABASE_HOST=db
+            - DATABASE_PORT=5432
+            - DATABASE_NAME=dev
+            - PHP_IDE_CONFIG=serverName=xdebug-docker
+        depends_on:
+            - db
+        extra_hosts:
+            - "host.docker.internal:host-gateway"
+    server:
+        container_name: wm-dev-server
+        image: wm/dev-server
+        build:
+            context: .
+            dockerfile: docker/server/Dockerfile
+        volumes:
+            - ./:/var/www
+            - ./docker/server/nginx.conf:/etc/nginx/nginx.conf
+            - ./docker/server/server.conf:/etc/nginx/conf.d/default.conf
+        ports:
+            - 8888:80
+    node:
+        image: wm/dev-node
+        container_name: wm-dev-node
+        build:
+            context: .
+            dockerfile: docker/node/Dockerfile
+            args:
+                UID: 1000
+        volumes:
+            - ./:/var/www
+    db:
+        image: postgres:13-alpine
+        container_name: wm-dev-db
+        volumes:
+            - postgresql_data:/var/lib/postgresql/data
+        environment:
+            POSTGRES_DB: 'dev'
+            POSTGRES_USER: 'dev'
+            POSTGRES_PASSWORD: 'dev'
+        ports:
+            - 5151:5432
+
+volumes:
+    postgresql_data:
