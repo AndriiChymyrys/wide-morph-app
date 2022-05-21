@@ -15,3 +15,6 @@ services:
         build:
             args:
                 UID: 1000
+        volumes:
+            - ./:/var/www
+            - ../packages:/var/packages
