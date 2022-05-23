@@ -13,4 +13,8 @@ return [
     Symfony\Bundle\MonologBundle\MonologBundle::class => ['all' => true],
     Symfony\Bundle\MakerBundle\MakerBundle::class => ['dev' => true],
     Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle::class => ['all' => true],
+    WideMorph\Ims\Bundle\ImsProductBundle\ImsProductBundle::class => ['all' => true],
+    WideMorph\Morph\Bundle\MorphConfigBundle\MorphConfigBundle::class => ['all' => true],
+    WideMorph\Morph\Bundle\MorphViewBundle\MorphViewBundle::class => ['all' => true],
+    WideMorph\Morph\Bundle\MorphViewBlockBundle\MorphViewBlockBundle::class => ['all' => true],
 ];

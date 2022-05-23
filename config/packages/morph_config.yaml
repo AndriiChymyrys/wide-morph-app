@@ -1,0 +1,3 @@
+morph_config:
+    publish_bundle:
+        - {namespace: 'WideMorph\Ims\Bundle\ImsProductBundle\ImsProductBundle', path: 'widemorph/ims-product-bundle'}
