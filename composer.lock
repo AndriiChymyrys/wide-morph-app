@@ -7658,7 +7658,7 @@
             "dist": {
                 "type": "path",
                 "url": "../packages/morph-view-bundle",
-                "reference": "371afe963513648f583143230a893c081a59e17d"
+                "reference": "49d1a06e16f71a6876d6b7c59e41d4c8bd7d127e"
             },
             "require": {
                 "symfony/webpack-encore-bundle": "^1.12",

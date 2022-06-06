@@ -3,4 +3,9 @@ controllers:
     type: annotation
 
 morph_view:
-    resource: "@MorphViewBundle/Resources/config/routing.xml"
+    resource: "@MorphViewBundle/Resources/config/routes/routing.xml"
+
+ims_product:
+    resource: "@ImsProductBundle/Resources/config/routes/routing.xml"
+    prefix: "product"
+    name_prefix: "product_"
