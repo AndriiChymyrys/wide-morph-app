@@ -55,7 +55,8 @@
         "widemorph/ims-product-bundle": "@dev",
         "widemorph/morph-config-bundle": "@dev",
         "widemorph/morph-view-bundle": "@dev",
-        "widemorph/morph-view-block-bundle": "@dev"
+        "widemorph/morph-view-block-bundle": "@dev",
+        "widemorph/morph-core-bundle": "@dev"
     },
     "config": {
         "allow-plugins": {

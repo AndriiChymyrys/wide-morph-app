@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "74078c44f2030365e7816907f961ab71",
+    "content-hash": "612dabcc3c20221ab4c74a0010aa31de",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -7299,7 +7299,7 @@
             "dist": {
                 "type": "path",
                 "url": "../packages/ims-product-bundle",
-                "reference": "af4284db13f22dbafd31b6ae7b392c2639be3542"
+                "reference": "d0a5ccd559fc5d66346048c7739ce1d261c195ca"
             },
             "type": "library",
             "autoload": {
@@ -7318,7 +7318,7 @@
             "dist": {
                 "type": "path",
                 "url": "../packages/morph-config-bundle",
-                "reference": "e1aaac2e05133257ce50353f08a9b1224577c6d9"
+                "reference": "3d6205bee748a08e1382848b056bb8e773565eee"
             },
             "require": {
                 "symfony/filesystem": "6.0.*"
@@ -7327,6 +7327,25 @@
             "autoload": {
                 "psr-4": {
                     "WideMorph\\Morph\\Bundle\\MorphConfigBundle\\": ""
+                }
+            },
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        },
+        {
+            "name": "widemorph/morph-core-bundle",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "../packages/morph-core-bundle",
+                "reference": "00b1a55bf8eab5223bf5b8a7f63900979887f492"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "WideMorph\\Morph\\Bundle\\MorphCoreBundle\\": ""
                 }
             },
             "transport-options": {
@@ -9656,7 +9675,8 @@
         "widemorph/ims-product-bundle": 20,
         "widemorph/morph-config-bundle": 20,
         "widemorph/morph-view-bundle": 20,
-        "widemorph/morph-view-block-bundle": 20
+        "widemorph/morph-view-block-bundle": 20,
+        "widemorph/morph-core-bundle": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

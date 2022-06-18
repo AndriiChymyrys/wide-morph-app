@@ -17,4 +17,5 @@ return [
     WideMorph\Morph\Bundle\MorphConfigBundle\MorphConfigBundle::class => ['all' => true],
     WideMorph\Morph\Bundle\MorphViewBundle\MorphViewBundle::class => ['all' => true],
     WideMorph\Morph\Bundle\MorphViewBlockBundle\MorphViewBlockBundle::class => ['all' => true],
+    WideMorph\Morph\Bundle\MorphCoreBundle\MorphCoreBundle::class => ['all' => true],
 ];

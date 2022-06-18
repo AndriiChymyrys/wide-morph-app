@@ -595,6 +595,9 @@
     "widemorph/morph-config-bundle": {
         "version": "dev-main"
     },
+    "widemorph/morph-core-bundle": {
+        "version": "dev-main"
+    },
     "widemorph/morph-view-block-bundle": {
         "version": "dev-main"
     },
