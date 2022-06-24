@@ -18,9 +18,12 @@
     </php>
 
     <testsuites>
-        <testsuite name="Project Test Suite">
+        <testsuite name="site">
             <directory>tests</directory>
+        </testsuite>
+        <testsuite name="packages">
             <directory>vendor/widemorph/morph-view-bundle/Tests</directory>
+            <directory>vendor/widemorph/morph-config-bundle/Tests</directory>
         </testsuite>
     </testsuites>
 
