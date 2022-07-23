@@ -7458,7 +7458,7 @@
             "dist": {
                 "type": "path",
                 "url": "../packages/ims-product-bundle",
-                "reference": "5f12cb42a08c3b70c268dcaaf0ae56f1db0269a4"
+                "reference": "e53f5ead8f1719ec39f76b109e1bc42119d5267d"
             },
             "type": "library",
             "autoload": {
@@ -7504,7 +7504,7 @@
             "dist": {
                 "type": "path",
                 "url": "../packages/morph-core-bundle",
-                "reference": "012552a1a5b88afce7267fc9bdd3b0b0b6e4ecd5"
+                "reference": "62e25b9ec8096af03f089b3e797230e1a57c2f03"
             },
             "require": {
                 "knplabs/knp-paginator-bundle": "5.8.*"
