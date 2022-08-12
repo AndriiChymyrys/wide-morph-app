@@ -9,3 +9,8 @@ ims_product:
     resource: "@ImsProductBundle/Resources/config/routes/routing.xml"
     prefix: "product"
     name_prefix: "product_"
+
+ims_category:
+    resource: "@ImsCategoryBundle/Resources/config/routes/routing.xml"
+    prefix: "category"
+    name_prefix: "category_"

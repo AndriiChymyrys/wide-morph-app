@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "612dabcc3c20221ab4c74a0010aa31de",
+    "content-hash": "35c8fbb6b658c8820910c42e2602e8e6",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -7453,12 +7453,31 @@
             "time": "2021-03-09T10:59:23+00:00"
         },
         {
+            "name": "widemorph/ims-category-bundle",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "../packages/ims-category-bundle",
+                "reference": "9c3f4194fe26e18bf263ac3ae9da4a8dafc087eb"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "WideMorph\\Ims\\Bundle\\ImsCategoryBundle\\": ""
+                }
+            },
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        },
+        {
             "name": "widemorph/ims-product-bundle",
             "version": "dev-master",
             "dist": {
                 "type": "path",
                 "url": "../packages/ims-product-bundle",
-                "reference": "e53f5ead8f1719ec39f76b109e1bc42119d5267d"
+                "reference": "c27de04b36912eaa4ca31eeaf2fd5e40a88dac21"
             },
             "type": "library",
             "autoload": {
@@ -7477,7 +7496,7 @@
             "dist": {
                 "type": "path",
                 "url": "../packages/morph-config-bundle",
-                "reference": "625d7c792bc7d8fb1f36feb28533613fbd751276"
+                "reference": "bc033fc9f02e66070acc2d0db635dc20b15edc3d"
             },
             "require": {
                 "symfony/filesystem": "6.0.*"
@@ -7504,7 +7523,7 @@
             "dist": {
                 "type": "path",
                 "url": "../packages/morph-core-bundle",
-                "reference": "62e25b9ec8096af03f089b3e797230e1a57c2f03"
+                "reference": "efe7ac7a4a9d5f6da1bfc4d6b559917fe4386312"
             },
             "require": {
                 "knplabs/knp-paginator-bundle": "5.8.*"
@@ -7526,7 +7545,7 @@
             "dist": {
                 "type": "path",
                 "url": "../packages/morph-view-block-bundle",
-                "reference": "89a82ec2a115caadf260e99f5f14c124a91fdbf0"
+                "reference": "95fa8fb1b5c8684224d023305c1254465cc3eea9"
             },
             "type": "library",
             "autoload": {
@@ -9843,7 +9862,8 @@
         "widemorph/morph-config-bundle": 20,
         "widemorph/morph-view-bundle": 20,
         "widemorph/morph-view-block-bundle": 20,
-        "widemorph/morph-core-bundle": 20
+        "widemorph/morph-core-bundle": 20,
+        "widemorph/ims-category-bundle": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

@@ -595,6 +595,9 @@
     "webmozart/assert": {
         "version": "1.10.0"
     },
+    "widemorph/ims-category-bundle": {
+        "version": "dev-main"
+    },
     "widemorph/ims-product-bundle": {
         "version": "dev-main"
     },

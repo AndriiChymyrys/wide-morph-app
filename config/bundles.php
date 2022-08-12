@@ -19,4 +19,5 @@ return [
     WideMorph\Morph\Bundle\MorphViewBlockBundle\MorphViewBlockBundle::class => ['all' => true],
     WideMorph\Morph\Bundle\MorphCoreBundle\MorphCoreBundle::class => ['all' => true],
     Knp\Bundle\PaginatorBundle\KnpPaginatorBundle::class => ['all' => true],
+    WideMorph\Ims\Bundle\ImsCategoryBundle\ImsCategoryBundle::class => ['all' => true],
 ];
