@@ -1,0 +1,5 @@
+morph_data_import:
+    entities:
+        App\Entity\Category:
+            exclude_properties:
+                - id

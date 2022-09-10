@@ -14,3 +14,8 @@ ims_category:
     resource: "@ImsCategoryBundle/Resources/config/routes/routing.xml"
     prefix: "category"
     name_prefix: "category_"
+
+morph_data_import:
+    resource: "@MorphDataImportBundle/Resources/config/routes/routing.xml"
+    prefix: "morph_data_import"
+    name_prefix: "morph_data_import_"
