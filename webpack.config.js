@@ -37,7 +37,7 @@ Encore.reset();
 Encore
     .setOutputPath('public/build/')
     .setPublicPath('/build')
-    .addEntry('backoffice', fs.realpathSync(__dirname + '/../packages/morph-view-bundle/Resources/assets/app.js'))
+    .addEntry('backoffice', './assets/app.js')
     .splitEntryChunks()
     .enableSingleRuntimeChunk()
     .enableSassLoader()
