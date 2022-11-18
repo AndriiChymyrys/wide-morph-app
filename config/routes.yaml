@@ -19,3 +19,8 @@ morph_data_import:
     resource: "@MorphDataImportBundle/Resources/config/routes/routing.xml"
     prefix: "morph_data_import"
     name_prefix: "morph_data_import_"
+
+cms:
+    resource: "@CmsEngineBundle/Resources/config/routes/routing.xml"
+    prefix: "cms"
+    name_prefix: "cms_"

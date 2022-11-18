@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c85fb7de6a9a9221c2796beb0025aaab",
+    "content-hash": "850a396a4f18a76fee7a7e17c0cb4734",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -8085,6 +8085,47 @@
             "time": "2022-06-03T18:03:27+00:00"
         },
         {
+            "name": "widemorph/cms-default-theme-bundle",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "../packages/cms-default-theme-bundle",
+                "reference": "230907715ae34758a54addb3550af6562f636b00"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "WideMorph\\Cms\\Bundle\\CmsDefaultThemeBundle\\": ""
+                }
+            },
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        },
+        {
+            "name": "widemorph/cms-engine-bundle",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "../packages/cms-engine-bundle",
+                "reference": "7c9160fdb460784c34efd8243c1036db408f9288"
+            },
+            "require": {
+                "widemorph/cms-default-theme-bundle": "@dev"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "WideMorph\\Cms\\Bundle\\CmsEngineBundle\\": ""
+                }
+            },
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        },
+        {
             "name": "widemorph/ims-category-bundle",
             "version": "dev-master",
             "dist": {
@@ -8158,7 +8199,7 @@
             "dist": {
                 "type": "path",
                 "url": "../packages/morph-core-bundle",
-                "reference": "a52e269cf2690fa305172cf69f8d813ccbf6e9a7"
+                "reference": "a4acade871560f4218f75cdbd6e0525964396d1b"
             },
             "require": {
                 "knplabs/knp-paginator-bundle": "5.8.*"
@@ -8180,7 +8221,7 @@
             "dist": {
                 "type": "path",
                 "url": "../packages/morph-data-import-bundle",
-                "reference": "cd8fb51a587db960d89b8041ed5bae216a1898f3"
+                "reference": "c98bec9c5ada13dbebdd5e0dbbff2ad479ca8ab2"
             },
             "require": {
                 "phpoffice/phpspreadsheet": "^1.24"
@@ -8189,6 +8230,25 @@
             "autoload": {
                 "psr-4": {
                     "WideMorph\\Morph\\Bundle\\MorphDataImportBundle\\": ""
+                }
+            },
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        },
+        {
+            "name": "widemorph/morph-routing-bundle",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "../packages/morph-routing-bundle",
+                "reference": "7d7c967162c0fc2a6abb0835f837d5d880f0026a"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "WideMorph\\Morph\\Bundle\\MorphRoutingBundle\\": ""
                 }
             },
             "transport-options": {
@@ -10576,7 +10636,7 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "stability-flags": {
         "widemorph/ims-product-bundle": 20,
         "widemorph/morph-config-bundle": 20,
@@ -10584,7 +10644,9 @@
         "widemorph/morph-view-block-bundle": 20,
         "widemorph/morph-core-bundle": 20,
         "widemorph/ims-category-bundle": 20,
-        "widemorph/morph-data-import-bundle": 20
+        "widemorph/morph-data-import-bundle": 20,
+        "widemorph/morph-routing-bundle": 20,
+        "widemorph/cms-engine-bundle": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

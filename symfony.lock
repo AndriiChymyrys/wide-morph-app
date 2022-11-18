@@ -595,6 +595,12 @@
     "webmozart/assert": {
         "version": "1.10.0"
     },
+    "widemorph/cms-default-theme-bundle": {
+        "version": "dev-main"
+    },
+    "widemorph/cms-engine-bundle": {
+        "version": "dev-main"
+    },
     "widemorph/ims-category-bundle": {
         "version": "dev-main"
     },
@@ -608,6 +614,9 @@
         "version": "dev-main"
     },
     "widemorph/morph-data-import-bundle": {
+        "version": "dev-main"
+    },
+    "widemorph/morph-routing-bundle": {
         "version": "dev-main"
     },
     "widemorph/morph-view-block-bundle": {

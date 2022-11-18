@@ -21,4 +21,7 @@ return [
     Knp\Bundle\PaginatorBundle\KnpPaginatorBundle::class => ['all' => true],
     WideMorph\Ims\Bundle\ImsCategoryBundle\ImsCategoryBundle::class => ['all' => true],
     WideMorph\Morph\Bundle\MorphDataImportBundle\MorphDataImportBundle::class => ['all' => true],
+    WideMorph\Morph\Bundle\MorphRoutingBundle\MorphRoutingBundle::class => ['all' => true],
+    WideMorph\Cms\Bundle\CmsDefaultThemeBundle\CmsDefaultThemeBundle::class => ['all' => true],
+    WideMorph\Cms\Bundle\CmsEngineBundle\CmsEngineBundle::class => ['all' => true],
 ];
