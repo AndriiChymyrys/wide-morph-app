@@ -19,5 +19,6 @@
         "dev": "encore dev --config-name dev",
         "watch": "encore dev --config-name dev --watch",
         "build": "encore production --progress"
-    }
+    },
+    "dependencies": {}
 }

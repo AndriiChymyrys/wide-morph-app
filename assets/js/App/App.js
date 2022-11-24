@@ -2,14 +2,17 @@ import { createApp } from 'vue/dist/vue.esm-bundler';
 import { mapGetters } from "vuex";
 import { registerComponents, registerDirectives } from '../utils/component-utils';
 
-// Import modules component
+////////////////// Import Components ////////////////////
 import CoreComponents from '../../../vendor/widemorph/morph-view-bundle/Resources/assets/js/App/Component/components';
 import ImportComponents from '../../../vendor/widemorph/morph-data-import-bundle/Resources/assets/js/App/Component/components';
 import CmsEngineComponents from '../../../vendor/widemorph/cms-engine-bundle/Resources/assets/js/App/Component/components';
+////////////////// Import Components ////////////////////
 
+////////////////// Import Directives ////////////////////
 // import CmsEngineDirectives from '../../../vendor/widemorph/cms-engine-bundle/Resources/assets/js/App/Directive/directives';
+////////////////// Import Directives ////////////////////
 
-// Import modules store
+// Import App store
 import Store from './Store';
 
 const app = createApp({
@@ -24,9 +27,11 @@ const app = createApp({
     }
 })
 
+////////////////// Register Components ////////////////////
 registerComponents(app, CoreComponents)
 registerComponents(app, ImportComponents)
 registerComponents(app, CmsEngineComponents)
+////////////////// Register Components ////////////////////
 
 // registerDirectives(app, CmsEngineDirectives)
 
